@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background-color: #f9fafc;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style-position: inside; /* Puts bullets/numbers inside the list item container */
+}
+ul,
+ol,
+p {
+  margin-bottom: 1em;
+}
+
+.container {
+  /* width: 50%; */
+  /* margin: 0 auto; */
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.faq-intro {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.faq-intro h1 {
+  font-size: 2.25rem;
+}
+
+.subtitle {
+  margin-top: -15px;
+}
+
+.faq-section {
+  /* border: 1px solid green; */
+  text-align: left;
+}
+
+.separator-container {
+  position: relative; /* Needed for absolute positioning of the pseudo-element */
+  margin-bottom: 50px;
+}
+
+.separator-container::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Adjust position as needed */
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
